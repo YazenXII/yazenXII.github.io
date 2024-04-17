@@ -1,101 +1,100 @@
 /* Bootstrap core CSS */
 .navbar {
-    margin-bottom: 20px;
-  }
-  
+  margin-bottom: 20px;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.carousel-caption h5 {
+  font-size: 28px;
+}
+
+.carousel-caption p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.address {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  padding: 30px 0;
+  color: #777;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Responsive classes */
+@media (min-width: 576px) {
   .carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    right: 20%;
+    left: 20%;
   }
-  
-  .carousel-caption h5 {
-    font-size: 28px;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
-  
-  .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 300;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
-  
-  .card {
-    margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
-  
-  .list-unstyled {
-    padding-left: 0;
-    list-style: none;
-  }
-  
-  .btn-link {
-    font-weight: 400;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .btn-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-  }
-  
+}
+
+@media (max-width: 575.98px) {
   .address {
-    margin-bottom: 20px;
+    text-align: center;
   }
-  
-  /* Footer */
-  footer {
-    padding: 30px 0;
-    color: #777;
-    background-color: #f8f9fa;
-    border-top: 1px solid #e5e5e5;
+}
+
+@media (max-width: 767.98px) {
+  .btn-link {
+    display: block;
+    text-align: center;
   }
-  
-  /* Responsive classes */
-  @media (min-width: 576px) {
-    .carousel-caption {
-      right: 20%;
-      left: 20%;
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
-  }
-  
-  @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .container {
-      max-width: 1140px;
-    }
-  }
-  
-  @media (max-width: 575.98px) {
-    .address {
-      text-align: center;
-    }
-  }
-  
-  @media (max-width: 767.98px) {
-    .btn-link {
-      display: block;
-      text-align: center;
-    }
-  }
-  
+}
