@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary img {
+    width: 100%;
+    /* Bilden fyller hela bredden av dess föräldrelement */
+    height: auto;
+    /* Bibehåller bildens proportioner */
+    display: block;
+    /* Tar bort eventuella extra mellanrum och justerar vertikalt */
+    margin: 0 auto 10px;
+    /* Centrera bilden horisontellt och lägg till lite avstånd under den */
+}
+
+
+body {
+    background-color: black
+}
