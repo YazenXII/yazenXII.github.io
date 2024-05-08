@@ -1,3 +1,162 @@
+h1 {
+    text-align: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar navbar-expand-lg bg-body-tertiary img {
+    width: 100%;
+    /* Bilden fyller hela bredden av dess föräldrelement */
+    height: auto;
+    /* Bibehåller bildens proportioner */
+    display: block;
+    /* Tar bort eventuella extra mellanrum och justerar vertikalt */
+    margin: 0 auto 10px;
+    /* Centrera bilden horisontellt och lägg till lite avstånd under den */
+}
+
+.black-background {
+    background-color: black;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link {
+    color: white;
+    font-family: 'Times New Roman', Times, serif
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay-text h1 {
+    margin-top: 0;
+}
+
+.overlay-text p {
+    margin-bottom: 0;
+}
+
+.daytona {
+    width: 100%;
+    /* Ensure the image fills its container */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+
+/* All image sizes will change in this domain below */
+
+.logo {
+    width: 125px;
+    height: auto;
+}
+
+.brand-box img {
+    width: 200px;
+    height: auto;
+    margin: 50px;
+}
+
+.brand-logo {
+    width: 100%;
+
+    height: auto;
+
+}
+
+/* Add this to your existing CSS file (design.css) */
+
+/* Style for the brand boxes */
+.brand-box {
+    display: inline-block;
+    /* Display boxes side by side */
+    margin-right: 20px;
+    /* Add some spacing between boxes */
+}
+
+/* Optional: Adjust the spacing between the boxes as needed */
+/* You can customize the margin-right value to your preference */
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    width: 50%;
+    margin: 2.5em;
+}
+
+section h2 {
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+section h2:hover {
+    transform: scale(1.2);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+.history p {
+    display: none;
+    background-color: white;
+    background-color: white;
+}
+
+.history:hover p {
+    display: contents;
+}
+
+
+.L {
+    color: white;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +166,17 @@
 
 body {
     font-family: fantasy;
-    background-color: white;
-    color: #333;
-    line-height: 1.6;
+    background-color: black;
+    color: #d8b04a;
+    line-height: 2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
-    color: #3498db;
+    color: #d8b04a;
 }
 
 
@@ -22,7 +184,6 @@ a {
 
 header {
     background-color: black;
-    color: i;
     text-align: center;
     padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -36,7 +197,7 @@ header h1 {
 
 
 nav {
-    background-color: #2c3e50;
+    background-color: white;
     padding: 10px;
     text-align: center;
 }
@@ -53,7 +214,6 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
     font-weight: bold;
     font-size: 1.1em;
     transition: color 0.3s;
@@ -63,7 +223,7 @@ nav ul li a {
 
 
 nav ul li a:hover {
-    color: #3498db;
+    color: black;
 }
 
 
@@ -75,16 +235,19 @@ main {
 }
 
 section {
-    width: 30%;
+    width: 100%;
     margin: 1.5em;
     background-color: black;
     padding: 1.5em;
-    box-shadow: 0 2px 5px rgba(205, 11, 11, 0.1);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    box-shadow: 0 2px 7px white;
+    font-family: 'Times New Roman', Times, serif;
+    border: white;
 }
 
+
+
 section h2 {
+
     font-size: 1.8em;
     margin-bottom: 0.5em;
 }
@@ -97,20 +260,23 @@ section p {
 
 .product {
     text-align: center;
-    max-width: 300px;
+    max-width: 600px;
     margin: 1em;
     border: 1px solid #ccc;
     padding: 1.5em;
     transition: transform 0.3s, box-shadow 0.3s;
-    background-color: black;
-
+    background-color: white;
+    box-shadow: white;
+    border: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+
 
 }
 
 .product:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px white;
 
 }
 
@@ -140,14 +306,16 @@ section p {
 
 
 footer {
-    background-color: #2c3e50;
-    color: white;
+    background-color: white;
     padding: 0.5em;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px 5px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -166,71 +334,30 @@ section h2:hover {
 }
 
 
-
-
-
-
-
-
-.intro-paragraph {
-    text-align: center;
-
-    font-style: unset;
-
-    font-display: 100px;
-
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-    background-color: black;
-
-    border: #fff 10px;
-
-    padding: 10px;
-
-    text-align: justify;
-
-    font-size: 1.2em;
-
-    color: white;
-
-    margin: px auto;
-
-    line-height: 1.6;
-
-}
-
 body {
     margin: 0;
     padding: 0;
 
     font-family: Arial, sans-serif;
+
+}
+
+
+.history p {
+    display: none;
+    background-color: white;
+    background-color: white;
+}
+
+.history h1 {
     color: white;
 }
 
-body.maskiner {
-    background-image: url('total_experience.jpg');
-    background-size: cover;
-    background-position: center;
+.history:hover p {
+    display: contents;
 }
 
 
-
-body.b {
-    background-image: url('blockchain-2.jpeg');
-    background-size: cover;
-    background-position: center;
-}
-
-body.f {
-    background-image: url('');
-    background-size: cover 1000px;
-    background-position: center;
-
-}
-
-body.m {
-    background-image: url('64b65d291c925f7b729dce0faee2b986.jpg');
-    background-size: cover;
-    background-position: center;
-
+.L {
+    color: white;
 }
