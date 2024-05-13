@@ -361,3 +361,25 @@ body {
 .L {
     color: white;
 }
+
+.car-brands {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+body {
+    background-image: url('https://cdn.wallpapersafari.com/72/22/eJpjwf.jpg');
+    max-width: 100%;
+    height: auto;
+}
+
+.car-brands {
+    background-color: rgb(49, 49, 49)
+}
+
+.history {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
