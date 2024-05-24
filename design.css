@@ -55,6 +55,7 @@ h1 {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .overlay-text h1 {
@@ -70,6 +71,7 @@ h1 {
     /* Ensure the image fills its container */
     height: auto;
     /* Maintain aspect ratio */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -99,7 +101,6 @@ h1 {
 .brand-box {
     display: inline-block;
     /* Display boxes side by side */
-    margin-right: 20px;
     /* Add some spacing between boxes */
 }
 
@@ -132,15 +133,6 @@ section h2:hover {
 }
 
 
-body {
-    margin: 0;
-    padding: 0;
-
-    font-family: Arial, sans-serif;
-
-}
-
-
 .history p {
     display: none;
     background-color: white;
@@ -152,9 +144,7 @@ body {
 }
 
 
-.L {
-    color: white;
-}
+
 
 
 * {
@@ -165,8 +155,7 @@ body {
 
 
 body {
-    font-family: fantasy;
-    background-color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif background-color: black;
     color: #d8b04a;
     line-height: 2;
     min-height: 100vh;
@@ -363,9 +352,9 @@ body {
 }
 
 .car-brands {
-    text-align: center;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    background-color: rgb(0, 0, 0);
 }
 
 body {
@@ -374,12 +363,10 @@ body {
     height: auto;
 }
 
-.car-brands {
-    background-color: rgb(49, 49, 49)
-}
 
 .history {
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    
+
 }
+
