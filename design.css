@@ -370,3 +370,24 @@ body {
 
 }
 
+/* Add this to your design.css file */
+.contact-info {
+    color: #ffffff;
+    /* Tomato color */
+}
+
+/* Add this to your design.css file */
+.position-title {
+    color: #d9b700;
+    /* Green color */
+}
+
+.contact-label {
+    color: #d9b99b;
+    /* Blue color for Telefon: and E-post: labels */
+}
+
+.contact-image {
+    width: 900px;
+    height: auto;
+}
