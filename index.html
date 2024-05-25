@@ -17,6 +17,77 @@
                 <a class="navbar-brand" href="#">
                     <img src="logo optimus.png" alt="Optimus logo" class="logo">
                 </a>
+
+
+
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button onclick="search()">Search</button>
+                <div id="searchResults"></div>
+                <script>
+                    function search() {
+                        // Get the input value
+                        var input = document.getElementById('searchInput').value.toLowerCase();
+                        // Mock data to search from
+                        var data = [
+                            {
+                                title: 'Mercedes-Benz S Class',
+                                price: '$469.00',
+                                img: '1-Mercedes-S-Class-plug-in.jpg',
+                                url: 'https://www.mercedes-benz.se/'
+                            },
+                        ];
+                        // Filter data based on input
+                        var results = data.filter(function (item) {
+                            return item.title.toLowerCase().includes(input);
+                        });
+                        // Display the results
+                        var resultsDiv = document.getElementById('searchResults');
+                        resultsDiv.innerHTML = ''; // Clear previous results
+                        if (results.length > 0) {
+                            results.forEach(function (result) {
+                                var colDiv = document.createElement('div');
+                                colDiv.className = 'col-md-4 d-flex justify-content-center';
+                                var cardDiv = document.createElement('div');
+                                cardDiv.className = 'card';
+                                cardDiv.style.width = '20rem';
+                                var imgLink = document.createElement('a');
+                                imgLink.href = result.url;
+                                var img = document.createElement('img');
+                                img.src = result.img;
+                                img.className = 'card-img-top';
+                                imgLink.appendChild(img);
+                                var cardBody = document.createElement('div');
+                                cardBody.className = 'card-body';
+                                var cardTitle = document.createElement('h5');
+                                cardTitle.className = 'card-title';
+                                cardTitle.textContent = result.title;
+                                var cardPrice = document.createElement('p');
+                                cardPrice.className = 'card-text';
+                                cardPrice.textContent = result.price;
+                                var buyNow = document.createElement('p');
+                                buyNow.className = 'card-text';
+                                buyNow.textContent = 'BUY NOW';
+                                var addToCart = document.createElement('p');
+                                addToCart.className = 'card-text';
+                                addToCart.textContent = 'ADD TO CART';
+
+                                cardBody.appendChild(cardTitle);
+                                cardBody.appendChild(cardPrice);
+                                cardBody.appendChild(buyNow);
+                                cardBody.appendChild(addToCart);
+                                cardDiv.appendChild(imgLink);
+                                cardDiv.appendChild(cardBody);
+                                colDiv.appendChild(cardDiv);
+                                resultsDiv.appendChild(colDiv);
+                            });
+                        } else {
+                            resultsDiv.innerHTML = '<p>No results found</p>';
+                        }
+
+                    }
+                </script>
+
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,14 +117,12 @@
     </header>
 
     <div class="hero-section position-relative">
-        <img src="https://www.motortrend.com/uploads/2022/08/Dodge_Charger_Daytona_SRT_Concept_Banshee_1.jpg"
-            alt="Dodge Daytona" class="img-fluid w-100">
+        <img src="mercedes gt 2024.avif" alt="Mercedes GT" class="img-fluid w-100">
         <div class="overlay-text text-white text-center position-absolute top-50 start-50 translate-middle">
-            <h1>The all new 2024 Dodge Charger SRT Daytona</h1>
-            <p>The first ever fully electric muscle car.</p>
+            <h1>New 2024 Mercedes-Benz AMG GT</h1>
+            <p>The Best or Nothing.</p>
         </div>
     </div>
-
 
     <div class="container my-5 car-brands">
         <div class="row text-center justify-content-center mb-4">
@@ -99,7 +168,7 @@
 
     <footer class="bg-dark text-white py-3">
         <div class="container text-center">
-            <p>&copy; 2024 Car Dealership. All rights reserved.</p>
+            <p>&copy; 2024 Optimus Continental Market. All rights reserved.</p>
         </div>
     </footer>
 
