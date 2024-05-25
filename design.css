@@ -17,6 +17,7 @@ h1 {
     /* Centrera bilden horisontellt och lägg till lite avstånd under den */
 }
 
+
 .black-background {
     background-color: black;
 }
@@ -368,6 +369,7 @@ body {
     color: white;
     font-family: 'Times New Roman', Times, serif;
 
+<<<<<<< HEAD
 }
 
 /* Add this to your design.css file */
@@ -390,4 +392,6 @@ body {
 .contact-image {
     width: 900px;
     height: auto;
+=======
+>>>>>>> 79c062309385eb1c522411a66ea5913d68efdcea
 }
