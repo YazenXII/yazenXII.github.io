@@ -1,56 +1,30 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    color: #d8b04a;
-    line-height: 2;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: url('https://cdn.wallpapersafari.com/72/22/eJpjwf.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-/* Header and Navbar Styles */
-header {
-    background-color: black;
+/* Gemensamma delar */
+h1 {
     text-align: center;
-    padding: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-header h1 {
-    font-size: 2.5em;
 }
 
 .navbar {
     background-color: black;
-}
 
-.navbar-brand img {
-    width: 50px;
-}
+    .navbar-brand img {
+        width: 50px;
+    }
 
-.navbar .nav-link {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}
+    &.navbar-expand-lg {
+        &.bg-body-tertiary {
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto 10px;
+            }
+        }
+    }
 
-.navbar-toggler {
-    border: none;
-}
-
-/* Container and Overlay Styles */
-.container {
-    position: relative;
-    width: 100%;
+    .nav-link {
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
 }
 
 .overlay-text {
@@ -68,47 +42,145 @@ header h1 {
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    h1 {
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
 }
 
-.overlay-text h1 {
-    margin-top: 0;
-}
-
-.overlay-text p {
-    margin-bottom: 0;
-}
-
-.daytona {
+.container {
+    position: relative;
     width: 100%;
-    height: auto;
 }
 
-/* Brand Box Styles */
+/* Övrig styling */
 .brand-box {
     display: inline-block;
-    margin: 50px;
+    margin-right: 20px;
+
+    img {
+        width: 200px;
+        height: auto;
+        margin: 50px;
+    }
 }
 
-.brand-box img {
-    width: 200px;
-    height: auto;
-}
-
-/* Section and Product Styles */
 section {
     width: 50%;
     margin: 2.5em;
+
+    h2 {
+        text-align: center;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+body {
+
+    /* Background image */
+    background-image: url('https://cdn.wallpapersafari.com/72/22/eJpjwf.jpg');
+    max-width: 100%;
+    height: auto;
+}
+
+.history {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+    p {
+        display: none;
+        background-color: white;
+
+        &:hover {
+            display: contents;
+        }
+    }
+
+    h1 {
+        color: white;
+    }
+}
+
+.car-brands {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 20px;
+
+    .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        border: none;
+        overflow: hidden;
+        border-radius: 15px;
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        img {
+            padding: 20px;
+            object-fit: contain;
+            height: 200px;
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+section {
+    width: 100%;
+    margin: 1.5em;
     background-color: black;
     padding: 1.5em;
     box-shadow: 0 2px 7px white;
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+
 section h2 {
-    text-align: center;
+
     font-size: 1.8em;
     margin-bottom: 0.5em;
+}
+
+section p {
+    margin-bottom: 1.5em;
+}
+
+
+
+section {
+    width: 50%;
+    margin: 2.5em;
+}
+
+section h2 {
+    text-align: center;
     transition: transform 0.5s;
 }
 
@@ -116,12 +188,19 @@ section h2:hover {
     transform: scale(1.2);
 }
 
-section p {
-    margin-bottom: 1.5em;
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
 }
+
 
 .history p {
     display: none;
+    background-color: white;
     background-color: white;
 }
 
@@ -129,102 +208,7 @@ section p {
     display: contents;
 }
 
-.history h1,
-.history {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-}
 
 .L {
     color: white;
-}
-
-.car-brands {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    background-color: rgb(0, 0, 0);
-}
-
-/* Footer Styles */
-footer {
-    background-color: white;
-    padding: 0.5em;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Custom Styles */
-.contact-info {
-    color: #ffffff;
-}
-
-.position-title {
-    color: #d9b700;
-}
-
-.contact-label {
-    color: #d9b99b;
-}
-
-.contact-image {
-    width: 900px;
-    height: auto;
-}
-
-/* Hover Effects */
-.product {
-    text-align: center;
-    max-width: 600px;
-    margin: 1em;
-    border: 1px solid #ccc;
-    padding: 1.5em;
-    transition: transform 0.3s, box-shadow 0.3s;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: content-box;
-}
-
-.product:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px white;
-}
-
-.product img {
-    max-width: 100%;
-    border-radius: 8px;
-}
-
-.product h2 {
-    margin-top: 1.2em;
-    font-size: 1.2em;
-}
-
-.product p {
-    margin-top: 1em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.product span {
-    display: block;
-    font-weight: bold;
-    margin-top: 1em;
-}
-
-.brand-box img {
-    max-width: 80%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
-    margin: auto;
-}
-
-.logo {
-    width: 200px;
-    height: auto;
 }
