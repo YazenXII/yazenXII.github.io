@@ -184,6 +184,7 @@ section h2 {
     transition: transform 0.5s;
 }
 
+
 section h2:hover {
     transform: scale(1.2);
 }
@@ -216,4 +217,14 @@ body {
 .logo {
     width: 500px;
     height: auto;
+}
+
+.vulcan {
+    width: 1000px;
+    height: auto;
+    padding: 100px;
+}
+
+.news {
+    text-align: left;
 }
