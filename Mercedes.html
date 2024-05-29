@@ -5,11 +5,92 @@
     <meta charset="UTF-8" />
     <title>Mercedes - About</title>
     <link rel="stylesheet" href="design.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .black-background {
+            background-color: #000;
+            padding: 10px 0;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8b400 !important;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-list li {
+            background: #444;
+            border: 1px solid #555;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .contact-list li:hover {
+            transform: scale(1.05);
+            background: #555;
+        }
+
+        .position-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .contact-label {
+            font-weight: bold;
+        }
+
+        .contact-info {
+            color: #f8b400;
+            text-decoration: none;
+        }
+
+        .contact-info:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
     <header class="black-background">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="logo optimus.png" alt="Optimus logo" class="logo">
@@ -19,24 +100,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html"
-                                style="color: white;">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="About.html">About us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="news.html">News</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search"
+                            id="searchInput">
+                        <button class="btn btn-outline-light" type="button" onclick="search()">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -53,7 +135,7 @@
                         <h5 class="card-title">Mercedes-Benz AMG GT Black series</h5>
                         <p class="card-text">The AMG GT Black Series is a high-performance sports car by Mercedes-Benz,
                             featuring an aggressive design, a powerful engine, and track-focused handling.
-                            </p>
+                        </p>
                         <a href="https://www.mercedes-benz.se/" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
@@ -67,7 +149,7 @@
                         <p class="card-text">The AMG GT Coupe is a high-performance sports car by Mercedes-Benz, known
                             for its sleek design, powerful engine, and exceptional handling. It combines luxury with
                             race-inspired performance.
-                            </p>
+                        </p>
                         <a href="https://www.mercedes-benz.se/" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
@@ -81,7 +163,7 @@
                         <p class="card-text">The GLE AMG is a luxury SUV by Mercedes-Benz, known for its powerful
                             performance and stylish design. It combines luxury with dynamic driving capabilities, making
                             it a top choice in its segment.
-                           </p>
+                        </p>
                         <a href="https://www.mercedes-benz.se/" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
@@ -97,7 +179,7 @@
                         <p class="card-text">The G63 AMG is a luxury SUV by Mercedes-Benz, celebrated for its powerful
                             engine and rugged design. It offers top-notch performance both on and off the road, making
                             it a highly desirable choice in the SUV segment.
-                            </p>
+                        </p>
                         <a href="https://www.mercedes-benz.se/" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
@@ -112,7 +194,7 @@
                             elegant design, advanced technology, and refined driving experience. It offers powerful
                             engines, luxurious interiors, and top-notch safety features, making it a benchmark in its
                             segment.
-                         </p>
+                        </p>
                         <a href="https://www.mercedes-benz.se/" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>
@@ -126,7 +208,7 @@
                             unmatched comfort, advanced technology, and exquisite craftsmanship. It offers powerful
                             engines, state-of-the-art features, and luxurious interiors, setting the standard for luxury
                             automobiles globally.
-                           </p>
+                        </p>
                         <a href="https://www.mercedes-benz.se/" class="btn btn-primary">Add to Cart</a>
                     </div>
                 </div>

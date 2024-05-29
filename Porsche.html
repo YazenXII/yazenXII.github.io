@@ -5,11 +5,92 @@
     <meta charset="UTF-8" />
     <title>Porsche - About</title>
     <link rel="stylesheet" href="design.css" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #333;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .black-background {
+            background-color: #000;
+            padding: 10px 0;
+        }
+
+        .navbar-brand img {
+            height: 50px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8b400 !important;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-list li {
+            background: #444;
+            border: 1px solid #555;
+            border-radius: 8px;
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .contact-list li:hover {
+            transform: scale(1.05);
+            background: #555;
+        }
+
+        .position-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .contact-label {
+            font-weight: bold;
+        }
+
+        .contact-info {
+            color: #f8b400;
+            text-decoration: none;
+        }
+
+        .contact-info:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
     <header class="black-background">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="logo optimus.png" alt="Optimus logo" class="logo">
@@ -19,24 +100,25 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html"
-                                style="color: white;">Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="About.html">About us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="news.html">News</a>
                         </li>
                     </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search"
+                            id="searchInput">
+                        <button class="btn btn-outline-light" type="button" onclick="search()">Search</button>
+                    </form>
                 </div>
             </div>
         </nav>
@@ -56,7 +138,7 @@
                             agile dynamics, and refined interior, it offers a thrilling driving experience. The 911
                             Carrera S combines performance with luxury, making it a top choice for enthusiasts seeking
                             both speed and sophistication in a sports car.
-                          </p>
+                        </p>
                         <a href="https://configurator.porsche.com/sv-SE/model-start/" class="btn btn-primary">Add to
                             Cart</a>
                     </div>
@@ -73,7 +155,7 @@
                             exhilarating driving experience. The Taycan Turbo S combines sustainability with high
                             performance, making it a top choice for those seeking both speed and environmental
                             consciousness in a luxury electric vehicle.
-                            </p>
+                        </p>
                         <a href="https://configurator.porsche.com/sv-SE/model-start/" class="btn btn-primary">Add to
                             Cart</a>
                     </div>
@@ -90,7 +172,7 @@
                             Panamera 4 E-Hybrid combines the performance of a sports car with the fuel efficiency of a
                             hybrid, making it an attractive option for those seeking both performance and environmental
                             friendliness in a luxury sedan.
-                           </p>
+                        </p>
                         <a href="https://configurator.porsche.com/sv-SE/model-start/" class="btn btn-primary">Add to
                             Cart</a>
                     </div>
@@ -108,7 +190,7 @@
                             and luxurious interior, it offers a thrilling driving experience. The Macan Turbo combines
                             sportiness with practicality, making it a top choice for enthusiasts seeking both
                             performance and versatility in a compact SUV.
-                          </p>
+                        </p>
                         <a href="https://configurator.porsche.com/sv-SE/model-start/" class="btn btn-primary">Add to
                             Cart</a>
                     </div>
@@ -124,7 +206,7 @@
                             and upscale interior amenities, it offers a balanced driving experience. The Cayenne S
                             combines sportiness with comfort, making it a popular choice for those seeking a blend of
                             performance and luxury in an SUV.
-                           </p>
+                        </p>
                         <a href="https://configurator.porsche.com/sv-SE/model-start/" class="btn btn-primary">Add to
                             Cart</a>
                     </div>
@@ -140,7 +222,7 @@
                             dynamics, and driver-focused interior, it offers an exhilarating driving experience. The 718
                             Cayman S combines performance with style, making it a top choice for enthusiasts seeking a
                             pure driving experience in a sports car.
-                           </p>
+                        </p>
                         <a href="https://configurator.porsche.com/sv-SE/model-start/" class="btn btn-primary">Add to
                             Cart</a>
                     </div>
