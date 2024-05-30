@@ -284,13 +284,13 @@ header .navbar-brand .logo {
 
 .news h3 {
     font-size: 1.5rem;
-    color: black;
-    background: #f8f9fa;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
     margin: 40px;
     animation: fadeIn 2s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
     /* Add fade-in animation */
 }
 
