@@ -267,9 +267,9 @@ header .navbar-brand .logo {
 }
 
 .news .vulcan {
-    max-width: 750px;
+    max-width: 250px;
     /* Increase the max-width to make the image larger */
-    height: 350;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 1px solid green;
